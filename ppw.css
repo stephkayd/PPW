@@ -4,7 +4,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 /* Body Styling */
 body {
     font-family: Arial, sans-serif;
@@ -13,10 +12,17 @@ body {
 }
 
 /* Header and Navbar Styling */
+
 header {
     background-color: #333; /* Dark background */
     color: white; /* White text color */
+    text-align: center;
 }
+.profile-pic 
+    {
+        width: 200px;
+        height: auto;
+      }
 
 .navbar ul {
     display: flex; /* Use Flexbox for layout */
@@ -46,12 +52,7 @@ header {
     padding: 40px 20px; /* Padding for the section */
 }
 
-.profile-pic {
-    width: 150px; /* Circular profile image */
-    height: 150px;
-    border-radius: 50%; /* Circular image */
-    margin-top: 20px; /* Space above the image */
-}
+
 
 /* Skills Section */
 .skills {
