@@ -20,7 +20,7 @@ header {
 }
 .profile-pic 
     {
-        width: 200px;
+        width: 300px;
         height: auto;
       }
 
@@ -76,6 +76,7 @@ header {
 /* Projects Section */
 .projects {
     padding: 40px 20px; /* Padding for the section */
+    text-align: center; /*center the text*/
 }
 
 .projects-container {
@@ -105,6 +106,7 @@ header {
 /* Contact Section */
 .contact {
     padding: 40px 20px; /* Padding for the section */
+    text-align: center; /*center the text*/
 }
 
 form {
