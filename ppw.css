@@ -1,0 +1,163 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header and Navbar Styling */
+header {
+    background-color: #333; /* Dark background */
+    color: white; /* White text color */
+}
+
+.navbar ul {
+    display: flex; /* Use Flexbox for layout */
+    justify-content: center; /* Center the navbar */
+    list-style-type: none; /* Remove bullets */
+    padding: 10px 0; /* Vertical padding */
+}
+
+.navbar li {
+    margin: 0 20px; /* Space between links */
+}
+
+.navbar a {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+    padding: 5px 10px; /* Padding around links */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.navbar a:hover {
+    background-color: #555; /* Change background on hover */
+}
+
+/* About Section */
+.about {
+    text-align: center; /* Centered text */
+    padding: 40px 20px; /* Padding for the section */
+}
+
+.profile-pic {
+    width: 150px; /* Circular profile image */
+    height: 150px;
+    border-radius: 50%; /* Circular image */
+    margin-top: 20px; /* Space above the image */
+}
+
+/* Skills Section */
+.skills {
+    padding: 40px 20px; /* Padding for the section */
+    text-align: center; /* Centered text */
+}
+
+.skills-container {
+    display: flex; /* Use Flexbox */
+    flex-wrap: wrap; /* Wrap skills to the next line */
+    justify-content: center; /* Center items */
+}
+
+.skill {
+    background-color: #e0e0e0; /* Light gray background */
+    margin: 10px; /* Space between skills */
+    padding: 10px 20px; /* Padding for skill items */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Projects Section */
+.projects {
+    padding: 40px 20px; /* Padding for the section */
+}
+
+.projects-container {
+    display: flex; /* Use Flexbox */
+    flex-wrap: wrap; /* Wrap cards */
+    justify-content: center; /* Center items */
+}
+
+.project-card {
+    background-color: #f9f9f9; /* Light background */
+    border: 1px solid #ddd; /* Border */
+    border-radius: 5px; /* Rounded corners */
+    margin: 10px; /* Space around cards */
+    overflow: hidden; /* Hide overflow */
+    width: 300px; /* Fixed width for cards */
+}
+
+.project-card img {
+    width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.project-card h3 {
+    padding: 10px; /* Padding for title */
+}
+
+/* Contact Section */
+.contact {
+    padding: 40px 20px; /* Padding for the section */
+}
+
+form {
+    display: flex; /* Use Flexbox for the form */
+    flex-direction: column; /* Vertical layout */
+    max-width: 400px; /* Max width for the form */
+    margin: auto; /* Center the form */
+}
+
+form label {
+    margin: 10px 0 5px; /* Margin for labels */
+}
+
+form input,
+form textarea {
+    padding: 10px; /* Padding for inputs */
+    margin-bottom: 10px; /* Space below inputs */
+    border: 1px solid #ccc; /* Border for inputs */
+    border-radius: 4px; /* Rounded corners */
+}
+
+form button {
+    padding: 10px; /* Padding for button */
+    background-color: #333; /* Button background */
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+form button:hover {
+    background-color: #555; /* Change color on hover */
+}
+
+/* Footer Section */
+footer {
+    text-align: center; /* Center footer text */
+    padding: 20px 0; /* Padding for footer */
+    background-color: #333; /* Dark background for footer */
+    color: white; /* White text color */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column; /* Stack navbar links vertically on small screens */
+    }
+
+    .projects-container {
+        flex-direction: column; /* Stack project cards vertically */
+    }
+
+    .project-card {
+        width: 100%; /* Full width for cards */
+        margin: 10px 0; /* Space between vertically stacked cards */
+    }
+}
